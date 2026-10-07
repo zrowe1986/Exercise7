@@ -20,7 +20,7 @@ Partial Class Exercise7
         lblFullName = New Label()
         txtFullName = New TextBox()
         btnName = New Button()
-        ListBox1 = New ListBox()
+        lstResults = New ListBox()
         lblDecimal = New Label()
         txtNumber = New TextBox()
         btnCurrency = New Button()
@@ -48,7 +48,7 @@ Partial Class Exercise7
         ' txtFullName
         ' 
         txtFullName.BackColor = SystemColors.ControlLight
-        txtFullName.ForeColor = SystemColors.Window
+        txtFullName.ForeColor = SystemColors.MenuText
         txtFullName.Location = New Point(190, 30)
         txtFullName.Name = "txtFullName"
         txtFullName.Size = New Size(150, 23)
@@ -65,14 +65,14 @@ Partial Class Exercise7
         btnName.Text = "This Is What I Know About Your Name"
         btnName.UseVisualStyleBackColor = False
         ' 
-        ' ListBox1
+        ' lstResults
         ' 
-        ListBox1.BackColor = SystemColors.GradientInactiveCaption
-        ListBox1.FormattingEnabled = True
-        ListBox1.Location = New Point(40, 140)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(280, 124)
-        ListBox1.TabIndex = 3
+        lstResults.BackColor = SystemColors.GradientInactiveCaption
+        lstResults.FormattingEnabled = True
+        lstResults.Location = New Point(40, 140)
+        lstResults.Name = "lstResults"
+        lstResults.Size = New Size(280, 124)
+        lstResults.TabIndex = 3
         ' 
         ' lblDecimal
         ' 
@@ -198,7 +198,7 @@ Partial Class Exercise7
         Controls.Add(btnCurrency)
         Controls.Add(txtNumber)
         Controls.Add(lblDecimal)
-        Controls.Add(ListBox1)
+        Controls.Add(lstResults)
         Controls.Add(btnName)
         Controls.Add(txtFullName)
         Controls.Add(lblFullName)
@@ -215,7 +215,7 @@ Partial Class Exercise7
     Friend WithEvents lblFullName As System.Windows.Forms.Label
     Friend WithEvents txtFullName As System.Windows.Forms.TextBox
     Friend WithEvents btnName As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents lstResults As System.Windows.Forms.ListBox
     Friend WithEvents lblDecimal As System.Windows.Forms.Label
     Friend WithEvents txtNumber As System.Windows.Forms.TextBox
     Friend WithEvents btnCurrency As System.Windows.Forms.Button

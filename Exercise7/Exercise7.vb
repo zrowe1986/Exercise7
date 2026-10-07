@@ -15,7 +15,7 @@
         FirstName = Name.Substring(0, n)
         LastName = Name.Substring(n + 1)
 
-        With ListBox1.Items
+        With lstResults.Items
             .Clear()
             .Add("Your First Name is " & FirstName)
             .Add("Your Last Name is " & LastName)
@@ -45,7 +45,7 @@
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         txtFullName.Clear()
         txtNumber.Clear()
-        ListBox1.Items.Clear()
+        lstResults.Items.Clear()
         lblCurrency.Text = ""
         lblPercent.Text = ""
         lblNumber.Text = ""
